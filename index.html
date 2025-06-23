@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+   <link rel="stylesheet" href="Styless.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Harvey Santelices</h1>
+            <button class="nav-button" onclick="toggleNav()">Menu</button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#social">Social Media</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Neil Harvey Santelices. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for toggling navigation -->
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("main-nav");
+            nav.classList.toggle("nav-open");
+        }
+    </script>
+
+</body>
+</html>
