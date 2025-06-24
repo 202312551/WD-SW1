@@ -1,47 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-   <link rel="stylesheet" href="Styless.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Header and Footer Designs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+    }
+    .design {
+      border: 2px solid #ddd;
+      margin: 40px 0;
+    }
+
+    header, footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      color: white;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    header .logo img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* ===== Design 1: Classic Blue ===== */
+    .design1 header { background-color: #005f73; }
+    .design1 footer { background-color: #0a9396; }
+    .design1 nav a { color: #ffffff; }
+
+    /* ===== Design 2: Modern Dark ===== */
+    .design2 header { background-color: #1a1a1a; }
+    .design2 footer { background-color: #333; }
+    .design2 nav a { color: #fff; }
+
+    /* ===== Design 3: Light and Clean ===== */
+    .design3 header, .design3 footer {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .design3 nav a {
+      color: #333;
+    }
+
+    /* ===== Design 4: Gradient Style ===== */
+    .design4 header {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+    }
+    .design4 footer {
+      background: linear-gradient(to right, #43e97b, #38f9d7);
+    }
+    .design4 nav a {
+      color: #fff;
+    }
+
+    /* ===== Design 5: Split Layout ===== */
+    .design5 header, .design5 footer {
+      background-color: #222;
+      color: #fff;
+    }
+    .design5 nav a {
+      color: #fff;
+    }
+
+    /* Footer content */
+    footer p {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Header -->
+  <!-- Design 1 -->
+  <section class="design design1">
     <header>
-        <div class="container">
-            <h1>Harvey Santelices</h1>
-            <button class="nav-button" onclick="toggleNav()">Menu</button>
-        </div>
+      <div class="logo">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2F%40ccph_media&psig=AOvVaw0xs8TYEGgnhDy4dDnCyGfO&ust=1750844918962000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIj0-IXkiY4DFQAAAAAdAAAAABAE" alt="Logo">
+        <h2>ResingBoi</h2>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contacts</a>
+        <a href="#">FAQs</a>
+      </nav>
     </header>
-
-    <!-- Navigation -->
-    <nav id="main-nav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#social">Social Media</a></li>
-            <li><a href="#faqs">FAQs</a></li>
-        </ul>
-    </nav>
-
-    <!-- Footer -->
+    <main>
+      <p style="padding: 10px;"></p>
+    </main>
     <footer>
-        <div class="container">
-            <p> Neil Harvey Santelices | TC05.</p>
-        </div>
+      <p>Classic Blue Footer</p>
     </footer>
+  </section>
 
-    <!-- JavaScript for toggling navigation -->
-    <script>
-        function toggleNav() {
-            var nav = document.getElementById("main-nav");
-            nav.classList.toggle("nav-open");
-        }
-    </script>
+  <!-- Design 2 -->
+  <section class="design design2">
+    <header>
+      <div class="logo">
+        <img src="https://via.placeholder.com/50" alt="Logo">
+        <h2>FastMOnkey</h2>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contacts</a>
+        <a href="#">FAQs</a>
+      </nav>
+    </header>
+    <main>
+      <p style="padding: 10px;"></p>
+    </main>
+    <footer>
+      <p>Modern Dark Footer</p>
+    </footer>
+  </section>
+
+  <!-- Design 3 -->
+  <section class="design design3">
+    <header>
+      <div class="logo">
+        <img src="https://via.placeholder.com/50" alt="Logo">
+        <h2>TVJ Racing</h2>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contacts</a>
+        <a href="#">FAQs</a>
+      </nav>
+    </header>
+    <main>
+      <p style="padding: 10px;"></p>
+    </main>
+    <footer>
+      <p>Light and Clean Footer</p>
+    </footer>
+  </section>
+
+  <!-- Design 4 -->
+  <section class="design design4">
+    <header>
+      <div class="logo">
+        <img src="https://via.placeholder.com/50" alt="Logo">
+        <h2>Barena Concept</h2>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contacts</a>
+        <a href="#">FAQs</a>
+      </nav>
+    </header>
+    <main>
+      <p style="padding: 10px;"></p>
+    </main>
+    <footer>
+      <p>Gradient Style Footer</p>
+    </footer>
+  </section>
+
+  <!-- Design 5 -->
+  <section class="design design5">
+    <header>
+      <div class="logo">
+        <img src="https://via.placeholder.com/50" alt="Logo">
+        <h2>CCPH Culture</h2>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contacts</a>
+        <a href="#">FAQs</a>
+      </nav>
+    </header>
+    <main>
+      <p style="padding: 10px;"></p>
+    </main>
+    <footer>
+      <p>&copy; 2025 Company</p>
+      <nav>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+    </footer>
+  </section>
 
 </body>
 </html>
