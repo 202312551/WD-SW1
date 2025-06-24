@@ -4,12 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Header and Footer Designs</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed&family=Orbitron&family=Lobster&family=Courier+Prime&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #fafafa;
     }
+
     .design {
       border: 2px solid #ddd;
       margin: 40px 0;
@@ -37,19 +42,34 @@
       margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
+      transition: all 0.3s ease;
+      padding: 6px 10px;
+      border-radius: 5px;
     }
 
-    /* ===== Design 1: Classic Blue ===== */
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #ffdf00;
+      transform: scale(1.05);
+      text-decoration: underline;
+    }
+
+    /* Font styles per header */
+    .design1 nav a { font-family: 'Pacifico', cursive; }
+    .design2 nav a { font-family: 'Orbitron', sans-serif; }
+    .design3 nav a { font-family: 'Roboto Condensed', sans-serif; }
+    .design4 nav a { font-family: 'Lobster', cursive; }
+    .design5 nav a { font-family: 'Courier Prime', monospace; }
+
+    /* ===== Design Colors ===== */
     .design1 header { background-color: #005f73; }
     .design1 footer { background-color: #0a9396; }
     .design1 nav a { color: #ffffff; }
 
-    /* ===== Design 2: Modern Dark ===== */
     .design2 header { background-color: #1a1a1a; }
     .design2 footer { background-color: #333; }
     .design2 nav a { color: #fff; }
 
-    /* ===== Design 3: Light and Clean ===== */
     .design3 header, .design3 footer {
       background-color: #f4f4f4;
       color: #333;
@@ -58,7 +78,6 @@
       color: #333;
     }
 
-    /* ===== Design 4: Gradient Style ===== */
     .design4 header {
       background: linear-gradient(to right, #4facfe, #00f2fe);
     }
@@ -69,7 +88,6 @@
       color: #fff;
     }
 
-    /* ===== Design 5: Split Layout ===== */
     .design5 header, .design5 footer {
       background-color: #222;
       color: #fff;
@@ -78,9 +96,10 @@
       color: #fff;
     }
 
-    /* Footer content */
     footer p {
       margin: 0;
+      text-align: center;
+      width: 100%;
     }
   </style>
 </head>
@@ -90,7 +109,7 @@
   <section class="design design1">
     <header>
       <div class="logo">
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2F%40ccph_media&psig=AOvVaw0xs8TYEGgnhDy4dDnCyGfO&ust=1750844918962000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIj0-IXkiY4DFQAAAAAdAAAAABAE" alt="Logo">
+        <img src="https://i.postimg.cc/6qg7dqcm/resing-boi.jpg" alt="Logo">
         <h2>ResingBoi</h2>
       </div>
       <nav>
@@ -104,7 +123,7 @@
       <p style="padding: 10px;"></p>
     </main>
     <footer>
-      <p>Classic Blue Footer</p>
+      <p>Neil Harvey Santelices | TC05</p>
     </footer>
   </section>
 
@@ -112,8 +131,8 @@
   <section class="design design2">
     <header>
       <div class="logo">
-        <img src="https://via.placeholder.com/50" alt="Logo">
-        <h2>FastMOnkey</h2>
+        <img src="https://i.postimg.cc/DwqWX2Xx/fastmonkey.png" alt="Logo">
+        <h2>FastMonkey</h2>
       </div>
       <nav>
         <a href="#">Home</a>
@@ -126,7 +145,7 @@
       <p style="padding: 10px;"></p>
     </main>
     <footer>
-      <p>Modern Dark Footer</p>
+      <p>Neil Harvey Santelices | TC05</p>
     </footer>
   </section>
 
@@ -134,7 +153,7 @@
   <section class="design design3">
     <header>
       <div class="logo">
-        <img src="https://via.placeholder.com/50" alt="Logo">
+        <img src="https://i.postimg.cc/P5GpJLPL/tvj.jpg" alt="Logo">
         <h2>TVJ Racing</h2>
       </div>
       <nav>
@@ -148,7 +167,7 @@
       <p style="padding: 10px;"></p>
     </main>
     <footer>
-      <p>Light and Clean Footer</p>
+      <p>Neil Harvey Santelices | TC05</p>
     </footer>
   </section>
 
@@ -156,7 +175,7 @@
   <section class="design design4">
     <header>
       <div class="logo">
-        <img src="https://via.placeholder.com/50" alt="Logo">
+        <img src="https://i.postimg.cc/hGcX8H8c/barena.jpg" alt="Logo">
         <h2>Barena Concept</h2>
       </div>
       <nav>
@@ -170,7 +189,7 @@
       <p style="padding: 10px;"></p>
     </main>
     <footer>
-      <p>Gradient Style Footer</p>
+      <p>Neil Harvey Santelices | TC05</p>
     </footer>
   </section>
 
@@ -178,7 +197,7 @@
   <section class="design design5">
     <header>
       <div class="logo">
-        <img src="https://via.placeholder.com/50" alt="Logo">
+        <img src="https://i.postimg.cc/htFX3F0H/ccph-logo.jpg" alt="Logo">
         <h2>CCPH Culture</h2>
       </div>
       <nav>
@@ -192,7 +211,7 @@
       <p style="padding: 10px;"></p>
     </main>
     <footer>
-      <p>&copy; 2025 Company</p>
+      <p>Neil Harvey Santelices | TC05</p>
       <nav>
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
